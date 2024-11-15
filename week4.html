@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Responsive Sidebar</title>
+   <link rel="stylesheet" href="index.css"> 
+<body>
+<div class="sidebar" id="sidebar">
+   <h2>Sidebar Menu</h2>
+   <ul>
+       <li><a href="#">Home</a></li>
+       <li><a href="#">About</a></li>
+       <li><a href="#">Services</a></li>
+       <li><a href="#">Portfolio</a></li>
+       <li><a href="#">Contact</a></li>
+   </ul>
+</div>
+<div class="content">
+   <h1>Main Content Area</h1>
+   <p>This is the main content area of the page. You can add your content 
+here.</p>
+</div>
+<div class="toggle-button" onclick="toggleSidebar()">â °</div>
+<script>
+   function toggleSidebar() {
+       const sidebar = document.getElementById('sidebar');
+       sidebar.classList.toggle('active');
+   }
+</script>
+</body>
+</html>------------------------------------------------------------------------------------------------------------------------
+//WEEK4 CSS
+* {
+}
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+body {
+   font-family: Arial, sans-serif;
+   display: flex;
+}
+.sidebar {
+   width: 250px;
+   background-color: #2c3e50;
+   color: white;
+   padding: 15px;
+   height: 100vh; 
+   position: fixed; 
+}
+   transition: width 0.3s; 
+.sidebar h2 {
+   text-align: center;
+   margin-bottom: 20px;
+}
+.sidebar ul {
+   list-style-type: none;
+}
+.sidebar ul li {
+   margin: 15px 0;
+}
+.sidebar ul li a {
+   color: white;
+   text-decoration: none;
+   padding: 10px;
+   display: block;
+   border-radius: 5px;
+   transition: background-color 0.3s;
+}
+.sidebar ul li a:hover {
+   background-color: #34495e;
+}
+.content {
+   margin-left: 250px;
+   padding: 20px;
+   flex-grow: 1; 
+}
+@media (max-width: 768px) {
+   .sidebar {
+       width: 100%;
+       height: auto; 
+       position: relative; 
+   }
+   .content {
+       margin-left: 0; 
+   }
+}

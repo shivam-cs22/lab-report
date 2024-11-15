@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Movie and City Lists</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1>My Favorite Movies</h1>
+   <ul class="movie-list">
+       <li class="movie-1">SANAM TERI KASAM</li>
+       <li class="movie-2">FAST & FURIOUS</li>
+       <li class="movie-3">KAL HO NA HO</li>
+       <li class="movie-4">3IDIOT</li>
+       <li class="movie-5">KABHI KHUSHI KABHI GHAM</li>
+   </ul>
+   <h1>Cities I Want to Visit</h1>
+   <ol class="city-list">
+       <li class="city-1">USA</li>
+       <li class="city-2">AUSTRALIA</li>
+       <li class="city-3">New York</li>
+       <li class="city-4">CANADA</li>
+       <li class="city-5">ENGLAND</li>
+   </ol>
+</body>
+</html>---------------------------------------------------------------------------------------------------------
+//WEEK3 CSS
+.movie-list {
+   list-style-type: none; 
+   padding: 0;
+}
+.movie-list li {
+   margin: 10px 0;
+   font-size: 20px;
+   padding: 10px;
+   border-radius: 5px;
+   color: white;
+   transition: background-color 0.3s;
+}
+.movie-1 {
+   background-color: blue; 
+}
+.movie-2 {
+   background-color: red; 
+}
+.movie-3 {
+   background-color: green; 
+}
+.movie-4 {
+   background-color: yellow; 
+}
+.movie-5 {
+   background-color: purple; 
+}
+.movie-list li:hover {
+   opacity: 0.8; 
+}
+.city-list {
+   padding-left: 20px;
+}
+.city-list li {
+   font-size: 18px;
+   margin: 5px 0;
+   font-weight: bold;
+   text-transform: uppercase;
+   color:black;
+}
+.city-1 {
+   color: orange; 
+}
+.city-2 {
+   color: darkblue;
+}
+.city-3 {
+}
+   color: darkgreen; 
+.city-4 {
+   color:purple; 
+}
+.city-5 {
+   color: darkred; 
+}
